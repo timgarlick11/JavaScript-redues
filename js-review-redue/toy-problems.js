@@ -6,10 +6,7 @@ Write a function that takes an array of integers and returns the sum of the inte
 
 plusOneSum([1, 2, 3, 4]); // 14
 
-*/
-
-
-
+*/ 
 /*
 
 Write a function that accepts a multi dimensional array and returns a flattened version.
@@ -18,6 +15,13 @@ flatten([1, 2, [3, [4], 5, 6], 7]) // [1, 2, 3, 4, 5, 6, 7]
 
 */
 
+var multi = [1, 2, [3, [4], 5, 6], 7]
+
+var flatten = function(arr) {
+	for (var i = 0; i < arr.length; i++) {
+		console.log(arr.length)
+	};
+}
 
 
 /*
@@ -37,19 +41,36 @@ There is an array of non-negative integers. A second array is formed by shufflin
 
 
 
-/*
+
 
 Write a function that returns the longest word(s) from a sentence. The function should not return any duplicate words (case-insensitive).
 
-Example
+var sentence = 'this is a great wording word';
+var longest = function(first) {
+	var empty = '';
+	var second = first.split(' ');
+	console.log(second);
+	for (var i = 0; i < second.length; i++) {
+		if (second[i].length >= empty.length) {
+			empty = second[i]
+		}
+	}; return empty;
 
+}
+longest(sentence)
+
+longest(sentence, arr)
 longestWords("You are just an old antidisestablishmentarian") // ["antidisestablishmentarian"]
 longestWords("I gave a present to my parents") // ["present", "parents"]
 longestWords("Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo") // ["buffalo"] or ["Buffalo"]
 
-*/
 
 
+	for (var i = 0; i < second.length; i++) {
+		if (second[i].length >= empty.length) {
+			empty = second[i]
+		}
+	};
 /*
 
 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
@@ -57,10 +78,31 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 
 */
+var arr2 = []
+var arr = [];
+var addAll = function(first, second) {
+for (var i = 0; i < 1000; i++) {
+	if (i % 3 === 0) {
+		arr.push(i)
+	}
+}
+for (var j = 0; j < 1000; j++) {
+	if (j % 5 === 0) {
+		arr2.push(j)
+	}
+}
+var one = eval(first.join('+'));
+//console.log(one);
+var two = eval(second.join('+'));
+var total = one + two;
+return total;
 
+}
+addAll(arr, arr2)
 
-/*
-
+var add = [1,2,3]
+total = add.join('+'); // example
+add;
 Remove duplicate characters in a given string keeping only the first occurrences. For example, if the input is ‘tree traversal’ the output will be "tre avsl".
 
 */
