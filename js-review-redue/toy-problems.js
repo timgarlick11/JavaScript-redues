@@ -1,8 +1,19 @@
 /* Make sure you do these last */
 
-/*
+
 
 Write a function that takes an array of integers and returns the sum of the integers after adding 1 to each.
+
+var plusOneSum = function(arr) {
+
+for (var i = 0; i < arr.length; i++) {
+	var nums = arr[i] + 1;
+	
+};
+console.log(nums);
+}
+
+
 
 plusOneSum([1, 2, 3, 4]); // 14
 
@@ -27,6 +38,7 @@ var flatten = function(arr) {
 /*
 
 Given an array [a1, a2, ..., aN, b1, b2, ..., bN, c1, c2, ..., cN] convert it to [a1, b1, c1, a2, b2, c2, ..., aN, bN, cN]
+
 
 */
 
@@ -116,3 +128,50 @@ console.log(sum(2,3));   // Outputs 5
 console.log(sum(2)(3));  // Outputs 5
 
 */
+var onlyEven = [1,6,2,4,4,5,6,8,9,6]
+
+var finder = function(arr, nums) {
+var twice = [];
+var once = []
+for (var i = 0; i < arr.length; i++) {
+	for (var j = 0; j < nums.length; j++) {
+	 	
+	 }
+ }
+
+finder(onlyeven, test);
+
+
+var test = [1,1,3,4,1]
+
+
+
+	twice.push(j,i);
+
+	 	} 
+
+	 	}
+
+	 }; 
+	 	return twice;
+
+
+
+
+var onlyEven = [1,6,2,4,4,5,6,8,9,6]
+
+var finder = function(arr, nums) {
+var twice = [];
+var count = 0;
+for (var i = 0; i < arr.length; i++) {
+	console.log(arr[i]);
+	for (var j = 0; j < nums.length; j++) {
+		console.log(nums[j])
+		if (nums[j] / arr[j] === 1) {
+			count++;
+		}
+	};
+ }
+}
+finder(onlyEven, test);
+var test = [1,1,3,4,1]

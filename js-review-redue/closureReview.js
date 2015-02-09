@@ -23,16 +23,17 @@ Once completed, add a second arguments that allows the function to be executed N
 After the function has been called N number of times, console.log('STAHHP');
 
 */
-var mainFn = function(secondFn) {
-	var placeHolder = true;	
-	if(stop === true) {
-		return function() {
+var mainFn = function(secondFn, num) {
+	num = 0;
+	var count = 3;	
+	return function() {
+		if(num <=  count) {
 			secondFn();
-			placeHolder = false;
-				
-		} 
-	} else { return 'stop'};
-};
+			num++;
+		
+		} else { return 'stop!!'}
+	} 
+}
 
 thirdFn = mainFn(function() {
 
